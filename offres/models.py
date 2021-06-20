@@ -7,7 +7,7 @@ class Offre(models.Model):
     description = models.TextField()
     nb_poste = models.IntegerField(null=False, default=1) 
     entreprise = models.ForeignKey(User, related_name='entreprise', on_delete=models.CASCADE, null=True)
-    masqué=models.BooleanField(default=False)
+    masque=models.BooleanField(default=False)
     def __str__(self):
         return self.titre
 

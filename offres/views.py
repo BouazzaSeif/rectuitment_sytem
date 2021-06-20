@@ -54,7 +54,7 @@ class OffreViewSet(viewsets.ModelViewSet):
 
 class OffrePublicViewSet(viewsets.ModelViewSet):
     serializer_class = OffrePublicSrerializer
-    queryset = Offre.objects.filter(masqué=False)
+    queryset = Offre.objects.filter(masque=False)
 
 
 
